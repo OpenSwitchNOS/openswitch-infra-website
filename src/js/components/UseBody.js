@@ -21,6 +21,7 @@ var Headline = require('grommet/components/Headline');
 var Button = require('grommet/components/Button');
 var Box = require('grommet/components/Box');
 var ConsoleIcon = require('./icons/Console');
+var OpenSwitchLogo = require('./icons/OpenSwitchLogo');
 
 module.exports = function (path, includeMenu) {
 
@@ -74,6 +75,21 @@ module.exports = function (path, includeMenu) {
         <Article>
 
           <Header colorIndex="neutral-1" menuMedia="lap-and-up" />
+
+          <HomeSection primary={true} full={true} className="openswitch-hero"
+            backgroundImage={'url(img/openswitch-background.png)'}>
+            <OpenSwitchLogo a11yTitle=""/>
+            <Headline large={true}><b>Open</b>Switch</Headline>
+            <Headline small={true}>
+              Using OpenSwitch.
+            </Headline>
+            <Menu direction="row">
+              <Link to="documents/introduction">
+                <Button label="Instroduction" onClick={this._onClick} primary={true} />
+                </Link>
+
+            </Menu>
+          </HomeSection>
 
           {documentationBody}
 
