@@ -19,8 +19,6 @@ var RoutedMenuUtils = require('../utils/RoutedMenuUtils');
 var StoryIcon = require('./icons/Story');
 var Headline = require('grommet/components/Headline');
 var Button = require('grommet/components/Button');
-var Tiles = require('grommet/components/Tiles');
-var Tile = require('grommet/components/Tile');
 var Box = require('grommet/components/Box');
 var ConsoleIcon = require('./icons/Console');
 
