@@ -16,7 +16,7 @@ var Footer = React.createClass({
   mixins: [IntlMixin],
 
   render: function() {
-    var colorIndex = 'accent-2';
+    var colorIndex = 'neutral-3';
     if (this.props.float) {
       colorIndex += '-a';
     }
