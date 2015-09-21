@@ -152,7 +152,7 @@ var Home = React.createClass({
         <Section full={true} backgroundImage={'url(img/network-background.png)'}
           appCentered={true} justify="start" align="start">
           <Menu direction="row" pad={{vertical: "small"}}>
-            <Button label="The OpenSwitch Blog" onClick={this._onClick} primary={true} />
+          
           </Menu>
           <Menu direction="row" responsive={false} pad={{ vertical: "small" }}>
           </Menu>
