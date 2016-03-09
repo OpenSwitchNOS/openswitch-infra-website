@@ -9,6 +9,7 @@ var Locale = require('grommet/utils/Locale');
 
 var OpenSwitch = require('./OpenSwitch');
 var Home = require('./components/Home');
+var NotFoundRoute = require('./components/NotFoundRoute');
 var Use = require('./components/UseBody')('use');
 var Participate = require('./components/ParticipateBody')('participate');
 var Develop = require('./components/DevelopBody')('develop');
@@ -22,6 +23,7 @@ if (__DEV_MODE__) {
 var routes = (
   <Route name="openSwitch" path={rootPath} handler={OpenSwitch}>
     <Route name="home" path={rootPath} handler={Home} />
+    <Route name="NotFoundRoute" path={'/*'} handler={NotFoundRoute} />
     {Develop.routes}
     {Participate.routes}
     {Use.routes}
