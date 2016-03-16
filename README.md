@@ -1,5 +1,4 @@
 # OpenSwitch Website with grommet
-
 ## Requirements
 Recent version of nodejs and npm (check grommet page for requirements details).
 
