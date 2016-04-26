@@ -324,7 +324,7 @@ module.exports = function (path, includeMenu) {
                   <Link to="documents/dev/ops-pmd/design"><i className="fa fa-angle-right"></i>Pluggable Module Daemon</Link>
                 </Box>
                 <Box pad={{ horizontal: "small" }}>
-                  <Link to="documents/dev/ops-rbac/design"><i className="fa fa-angle-right"></i>RBAC</Link>
+                  <span>RBAC</span>
                 </Box>
                 <Box pad={{ horizontal: "small" }}>
                   <Link to="documents/dev/ops-sysd/design"><i className="fa fa-angle-right"></i>System Daemon</Link>
