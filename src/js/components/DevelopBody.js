@@ -103,7 +103,7 @@ module.exports = function (path, includeMenu) {
 
           <Box direction="column">
             <p><strong>
-              System Infrastructure for Development</strong>
+              System Infrastructure How-To Guides for Development</strong>
             </p>
             <Box direction="row">
               <Box direction="column" align="start" responsive={true}>
@@ -111,13 +111,13 @@ module.exports = function (path, includeMenu) {
                     <Link to="documents/user/source_interface_design"><i className="fa fa-angle-right"></i>Source IP selection</Link>
                   </Box>
                   <Box pad={{ horizontal: "small" }}>
-                    <Link to="documents/user/diagnostic_dev_guide"><i className="fa fa-angle-right"></i>Diagnostics Infra</Link>
+                    <Link to="documents/user/diagnostic_dev_guide"><i className="fa fa-angle-right"></i>Diagnostics</Link>
                   </Box>
                   <Box pad={{ horizontal: "small" }}>
-                    <Link to="documents/user/event_logs_dev_guide"><i className="fa fa-angle-right"></i>Event Log Infra</Link>
+                    <Link to="documents/user/event_logs_dev_guide"><i className="fa fa-angle-right"></i>Event Logs</Link>
                   </Box>
                   <Box pad={{ horizontal: "small" }}>
-                    <Link to="documents/user/show-tech_dev_guide"><i className="fa fa-angle-right"></i>Show Tech Infra</Link>
+                    <Link to="documents/user/show-tech_dev_guide"><i className="fa fa-angle-right"></i>Show Tech</Link>
                   </Box>
                   <Box pad={{ horizontal: "small" }}>
                     <Link to="documents/dev/how-to-process-isolation"><i className="fa fa-angle-right"></i>Process Isolation</Link>
@@ -131,7 +131,7 @@ module.exports = function (path, includeMenu) {
                     <Link to="documents/user/auditloghowtoguide"><i className="fa fa-angle-right"></i>Audit Log</Link>
                   </Box>
                   <Box pad={{ horizontal: "small" }}>
-                    <Link to="documents/user/ovsdb_improvements_design"><i className="fa fa-angle-right"></i>OVSDB Improvements Design</Link>
+                    <Link to="documents/user/ovsdb_improvements_design"><i className="fa fa-angle-right"></i>OVSDB Improvements</Link>
                   </Box>
                   <Box pad={{ horizontal: "small" }}>
                     <Link to="documents/user/ovsdb_improvements_how_to_guide"><i className="fa fa-angle-right"></i>OVSDB Improvements How-To Guide</Link>
