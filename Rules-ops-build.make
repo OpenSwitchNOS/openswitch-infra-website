@@ -22,6 +22,9 @@ $(MARKDOWN_ROOT)/dev/$(1): $(MARKDOWN_ROOT)/dev src/$(1)
 	    echo "# Placeholder page" > $(MARKDOWN_ROOT)/dev/$(1)/design.md ; \
 	  fi \
 	fi
+	$(V) if [ -f src/$(1)/ops-tests/component/$(1)_test.md ] ; then \
+        cp -R src/$(1)/ops-tests/component/$(1)_test.md $(MARKDOWN_ROOT)/dev/$(1)/DESIGN.md ; \
+        fi
 
 src/$(1):
 	$(V) $(MAKE) devenv_add $(1)
