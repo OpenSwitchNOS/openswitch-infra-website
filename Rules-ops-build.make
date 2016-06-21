@@ -22,9 +22,6 @@ $(MARKDOWN_ROOT)/dev/$(1): $(MARKDOWN_ROOT)/dev src/$(1)
 	    echo "# Placeholder page" > $(MARKDOWN_ROOT)/dev/$(1)/design.md ; \
 	  fi \
 	fi
-	$(V) if [ -f src/$(1)/ops-tests/component/$(1)_test.md ] ; then \
-        cp -R src/$(1)/ops-tests/component/$(1)_test.md $(MARKDOWN_ROOT)/dev/$(1)/DESIGN.md ; \
-        fi
 
 src/$(1):
 	$(V) $(MAKE) devenv_add $(1)
@@ -41,6 +38,13 @@ update-website-$(1): $(MARKDOWN_ROOT)/dev/$(1)
 	    echo "# Placeholder page" > $(MARKDOWN_ROOT)/dev/$(1)/design.md ; \
 	  fi \
 	fi
+	if [ -d src/$(1)/ops-tests/feature ] ; then \
+		find src/$(1)/ops-tests/feature -iname "*.md" -exec cp -Rf {} $(MARKDOWN_ROOT)/user \; ;\
+	fi
+	if [ -d src/$(1)/ops-tests/component ] ; then \
+		find src/$(1)/ops-tests/component -iname "*.md" -exec cp -Rf {} $(MARKDOWN_ROOT)/dev/$(1) \; ;\
+	fi
+
 endef
 
 $(foreach component,$(COMPONENTS),$(eval $(call make-component,$(component))))
