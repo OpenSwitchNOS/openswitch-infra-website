@@ -278,6 +278,9 @@ module.exports = function (path, includeMenu) {
                   <Link to="documents/user/show_tech_design"><i className="fa fa-angle-right"></i>Show Tech</Link>
                 </Box>
                 <Box pad={{ horizontal: "small" }}>
+                  <Link to="documents/user/show_vlog_design"><i className="fa fa-angle-right"></i>Show Vlog</Link>
+                </Box>
+                <Box pad={{ horizontal: "small" }}>
                   <Link to="documents/user/sub-interface_design"><i className="fa fa-angle-right"></i>Sub Interfaces</Link>
                 </Box>
                 <Box pad={{ horizontal: "small" }}>
@@ -508,6 +511,9 @@ module.exports = function (path, includeMenu) {
                 </Box>
                 <Box pad={{ horizontal: "small" }}>
                   <Link to="documents/user/show_tech_test"><i className="fa fa-angle-right"></i>Show Tech</Link>
+                </Box>
+                <Box pad={{ horizontal: "small" }}>
+                  <Link to="documents/user/show_vlog_test"><i className="fa fa-angle-right"></i>Show Vlog</Link>
                 </Box>
                 <Box pad={{ horizontal: "small" }}>
                   <Link to="documents/user/sub-interface_test"><i className="fa fa-angle-right"></i>Sub Interface</Link>
